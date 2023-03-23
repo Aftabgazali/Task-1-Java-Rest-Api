@@ -22,3 +22,11 @@ contains this string and return one or more servers found. Return 404 if nothing
 “Server” objects should be stored in MongoDB database.
 Be sure that you can show how your application responds to requests using postman, curl or
 any other HTTP client.
+
+## We have used SpringBoot Framework to work on the RestApi for task 1
+## 1. Api Documentation
+For this task, we decided to build a simple api of **Course** Object which has fields such as,
+● An Integer Id 
+● A String Name
+● A String Language
+● A String Framework
