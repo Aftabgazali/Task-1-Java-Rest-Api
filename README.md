@@ -2,6 +2,7 @@
 ## Problem Statement
 Implement an application in java which provides a REST API with endpoints for searching,
 creating and deleting “server” objects:
+
 ● GET servers. Should return all the servers if no parameters are passed. When server id
 is passed as a parameter - return a single server or 404 if there’s no such a server.
 
@@ -23,9 +24,10 @@ contains this string and return one or more servers found. Return 404 if nothing
 Be sure that you can show how your application responds to requests using postman, curl or
 any other HTTP client.
 
-## We have used SpringBoot Framework to work on the RestApi for task 1
+## We have used SpringBoot Framework to work on the RestApi for task 1 and have used Postman to test the Application
 ## 1. Api Documentation
 For this task, we decided to build a simple api of **Course** Object which has fields such as,
+
 ● An Integer Id 
 
 ● A String Name
@@ -33,3 +35,20 @@ For this task, we decided to build a simple api of **Course** Object which has f
 ● A String Language
 
 ● A String Framework
+
+![image](https://user-images.githubusercontent.com/52740449/227205685-6a43e0bb-1966-4b4f-be3d-5e4308538850.png)
+
+## 2. Build an SpringBoot Applications
+Spring Boot is a Java framework for building standalone, production-grade applications that are easy to deploy and manage. It provides a wide range of features and functionalities that make it easy to create web applications and microservices quickly and efficiently.
+
+To create a Spring Boot application, you first need to set up your development environment with Java and a compatible IDE such as Eclipse, IntelliJ IDEA, or NetBeans. Then, you can create a new project using one of the Spring Boot starter templates.
+
+For this task we have used the Spring Tool Suite IDE(STS) to use all the templates and its dependecies.
+
+Let's look at the steps to prepare for task 1.
+
+(i) Download the STS tool
+
+(ii) Use https://start.spring.io/ to dowload all the required template and their dependencies.
+
+(iii) Add Mongodb dependency and the Web Dependency then click on **Generate**
