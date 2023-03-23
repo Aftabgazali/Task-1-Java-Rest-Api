@@ -38,7 +38,7 @@ For this task, we decided to build a simple api of **Course** Object which has f
 
 ![image](https://user-images.githubusercontent.com/52740449/227205685-6a43e0bb-1966-4b4f-be3d-5e4308538850.png)
 
-## 2. Build an SpringBoot Applications
+## 2. Build an SpringBoot Application.
 Spring Boot is a Java framework for building standalone, production-grade applications that are easy to deploy and manage. It provides a wide range of features and functionalities that make it easy to create web applications and microservices quickly and efficiently.
 
 To create a Spring Boot application, you first need to set up your development environment with Java and a compatible IDE such as Eclipse, IntelliJ IDEA, or NetBeans. Then, you can create a new project using one of the Spring Boot starter templates.
@@ -52,3 +52,26 @@ Let's look at the steps to prepare for task 1.
 (ii) Use https://start.spring.io/ to dowload all the required template and their dependencies.
 
 (iii) Add Mongodb dependency and the Web Dependency then click on **Generate**
+
+(iv) Open the STS tool and import the downloaded template.
+
+## 2.1 Defining the Controller
+In Spring Boot, a controller is a class that handles incoming HTTP requests and sends an HTTP response back to the client. Controllers are responsible for processing user requests, fetching data from the backend services, performing business logic, and returning a response to the client.
+Since we are working with rest api, we have to add '@RestController' before the Controller class
+The methods in a controller class are mapped to specific HTTP requests using annotations such as @GetMapping, @PostMapping, @PutMapping, @DeleteMapping, etc.
+
+For the Task 1 we would require Get,Post,and Delete Mapping.
+
+### 2.1.1 Prepare the Application to make Api Calls.
+Before making any api calls we have to prepare the application, 
+
+● let's first build the Course class. provide it fields such as id, name, framework, and language. create getters and setters method ( since all fields are private ). 
+
+● Create one contorllerService Interface to hold all the necessary methods such as getCourse(), addCourse() and deleteCourse().
+
+● Build one implementation Class that extends this controllerService Interface for loose coupling. Override all the methods.
+
+### 2.1.2 Get all Courses
+The Initial state of our application when called with '/courses' must return the list of courses present, therefore to implement this method we would take help of of 2.1.1 to build getCourses() method and override it in the implementation class. In-short it would simply return the List<Course> course object.
+  
+
