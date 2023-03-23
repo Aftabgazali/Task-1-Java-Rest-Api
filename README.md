@@ -122,4 +122,19 @@ Let's check whether our newly created object is present in the database or not.
   
 ![postRequestResult](https://user-images.githubusercontent.com/52740449/227219021-9da57840-aa88-4fb2-b266-a74e04abbe0f.png)
 
+### 2.1.6 Delete Course
+
+This method would use '@DeleteMapping' annotation to delete the particular course by making DELETE request.
+Logic to build this method is to simply select only those courses whose id doesn't matches with the course id we want to delete.
+
+Let's test Delete Method.
+ 
+![deleteCoursePositiveResult](https://user-images.githubusercontent.com/52740449/227221149-39221698-a333-4ce3-8fbe-a452698e75fd.png)
+
+if you look in the above result we have deleted the object with id 789, and the result we got back was an OK response from the server meaning that this operation was valid.
+
+Let's now look at the list of course to check whether the course with id 789 is deleted or not.
+ 
+![deleteCourseResult](https://user-images.githubusercontent.com/52740449/227221607-dea2000a-64e9-4f72-8322-1d73beda7b21.png)
+
 
