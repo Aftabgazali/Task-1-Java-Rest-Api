@@ -27,6 +27,9 @@ any other HTTP client.
 ## 1. Api Documentation
 For this task, we decided to build a simple api of **Course** Object which has fields such as,
 ● An Integer Id 
+
 ● A String Name
+
 ● A String Language
+
 ● A String Framework
