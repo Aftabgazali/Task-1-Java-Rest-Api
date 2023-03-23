@@ -73,5 +73,25 @@ Before making any api calls we have to prepare the application,
 
 ### 2.1.2 Get all Courses
 The Initial state of our application when called with '/courses' must return the list of courses present, therefore to implement this method we would take help of of 2.1.1 to build getCourses() method and override it in the implementation class. In-short it would simply return the List<Course> course object.
-  
+
+Let's test this method, first run the project and then open Postman application select GET request and use url localhost:8080/courses to get all the list of courses
+
+![image](https://user-images.githubusercontent.com/52740449/227213861-c19d2fd9-493b-43cc-89e9-badbfbd2962d.png)
+
+### 2.1.3 Get Particular Course by id
+
+To build this method simply use the '@Pathvarialbe', @PathVariable is an annotation used to extract a variable value from the URI of a request mapping. It is used in conjunction with @RequestMapping or one of its variants, such as @GetMapping, @PostMapping, @PutMapping, or @DeleteMapping.
+
+Therefore pass in @GetMapping {id} variable to use this variable in the method to check for which id is required to display.
+Logic is simple just map over each objects in the course list, and check mapped object.id == entered_id or not 
+
+Let's test this method and look at the results,
+
+![courseById](https://user-images.githubusercontent.com/52740449/227215877-83e8f290-64fb-4e32-ac8b-09a9a0b1bd96.png)
+
+We have also made this method capable of handling errors, hence if any unknown id is entered it must return an error. This is done with the help of RequestEntity.
+
+Let's test this example also,
+
+![image](https://user-images.githubusercontent.com/52740449/227216335-26878461-5a2a-47e8-a685-2102b2432d2d.png)
 
