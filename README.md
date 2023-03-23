@@ -95,3 +95,31 @@ Let's test this example also,
 
 ![image](https://user-images.githubusercontent.com/52740449/227216335-26878461-5a2a-47e8-a685-2102b2432d2d.png)
 
+ 404 error is returned meaning that entered id doesn't exist in the database.
+  
+### 2.1.4 Get all Courses with Name.
+
+This method must return all the courses which share the same name, this is done very intelligently using the same method used for getCourseById(), instead of passing a string name, we passed the whole object into {_} and returned a list of courses. As usual this is also made to handle errors. The logic to build this method is also simple simply traverse the course list, check for the name which are equal to the entered name using the .equals string function. If they are equals add it to the new 
+list and return this list.
+  
+Let's look at the results for this method
+  
+![image](https://user-images.githubusercontent.com/52740449/227217711-fbbe92b9-9dd6-4222-ac5d-7128e6d17ec2.png)
+
+If any unknown name is entered return an error, since the name 'pentoo' doesn't exist in the database.
+
+![image](https://user-images.githubusercontent.com/52740449/227217880-173b30cd-79d3-4674-87a7-62686aefc2b9.png)
+  
+### 2.1.5 Post Request
+
+Let's build the method to put courses into the database, to build this we need to use the '@PostMapping' annotation before the post method. The logic is very simple simply add this new course to the existing list present and return this list.
+  
+Let's test this out, make an POST request add a new json object, then simply use the GET request to get all the courses.
+  
+![image](https://user-images.githubusercontent.com/52740449/227218765-ea3e0cca-e952-463d-8bc5-8decec18c2fa.png)
+
+Let's check whether our newly created object is present in the database or not.
+  
+![postRequestResult](https://user-images.githubusercontent.com/52740449/227219021-9da57840-aa88-4fb2-b266-a74e04abbe0f.png)
+
+
