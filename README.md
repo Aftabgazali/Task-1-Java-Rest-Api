@@ -138,3 +138,6 @@ Let's now look at the list of course to check whether the course with id 789 is 
 ![deleteCourseResult](https://user-images.githubusercontent.com/52740449/227221607-dea2000a-64e9-4f72-8322-1d73beda7b21.png)
 
 
+## 3. Upload the data to MongoDB
+
+Using MongoDb is very easy with the help of Springboot framework with just few lines of code we can easily connect our application to Mongo database.
